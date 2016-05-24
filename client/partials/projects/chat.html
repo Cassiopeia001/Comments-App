@@ -1,0 +1,28 @@
+<div class="main_wrapper">
+
+    <form id="input-box">
+                <input id="email" type="text" class="email-input" placeholder="Email" ng-model="mail">
+                <textarea type="text" class="text-input" placeholder="Message" ng-model="msg"></textarea>
+                <div class="button-submit">
+                    <button type="submit" class="btn btn-primary" ng-click="sendMessage(mail, msg)">Submit</button>
+                </div>
+    </form>
+
+    <form class="filter-box" ng-controller="chatController" ng-submit="submit()">
+            <div class="left-inner-addon">
+                <i class="glyphicon glyphicon-search i-color"></i>
+                <input type="search" class="form-control" placeholder="Filter" ng-model="filter">
+            </div>
+    </form>
+
+    <div class="comments-window">
+        <ul ng-repeat="message in messages" class="comment">
+            <img class="gravatar-img" src="{{get_gravatar(message.mail, 50)}}"/>
+            <li class="user-comment">
+                <p class="username">{{message.mail}}</p>
+                <p class="message">{{message.msg}}</p>
+            </li>
+        </ul>
+    </div>
+
+</div>

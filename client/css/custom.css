@@ -1,0 +1,197 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+header, section, footer, aside, nav, article, ul, li, img, span, textarea, input{
+    display:block;
+}
+
+body{
+    width:100%;
+    display:-webkit-box;
+    -webkit-box-pack: center;
+
+    display: flex;
+    justify-content:center;
+
+    display: -ms-flexbox;
+    -ms-flex-pack: justify;
+}
+
+#main_wrapper{
+    max-width: 330px;
+    margin: 20px auto;
+    display: -webkit-box; /**/
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    background-color: #fffff0;
+
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#input-box{
+    max-width: 330px;
+    background-color: #EFEFEF;
+    padding: 20px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-orient: vertical;
+
+    -ms-flex-pack: justify;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.email-input, textarea{
+    border: 1px solid #bbb;
+    padding: 10px;
+    display: -webkit-box;
+    -webkit-box-flex:1;
+    margin-bottom: 13px;
+
+    display: -ms-flexbox;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+textarea{
+    resize: none;
+}
+
+.button-submit{
+    display: -webkit-box;
+    -webkit-box-pack: end;
+
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:flex-end;
+}
+
+button{
+    background-color: #40A8DF;
+    color: #ffffff;
+}
+
+.filter-box{
+    max-width: 330px;
+    padding: 20px;
+    border-left: 2px solid #EFEFEF ;
+    border-right: 2px solid #EFEFEF ;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-orient: vertical;
+    background-color: #ffffff;
+
+    -ms-flex-pack: justify;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.form-control{
+    border: 1px solid #bbb;
+    border-radius: 0;
+}
+
+.comments-window{
+    max-width: 330px;
+    padding: 10px 20px;
+    border-left: 2px solid #EFEFEF ;
+    border-right: 2px solid #EFEFEF ;
+    border-bottom: 2px solid #EFEFEF ;
+    display: -webkit-box;
+    -webkit-box-pack: start;
+    -webkit-box-orient: vertical;
+    background-color: #ffffff;
+
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.comment{
+    display: -webkit-box;
+    -webkit-box-pack: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align:center;
+
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gravatar-img{
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+}
+
+.user-comment{
+    margin: 6px 0px 0px 8px;
+    display: -webkit-box;
+    -webkit-box-pack: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex:1;
+
+    display: -ms-flexbox;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+
+}
+.user-comment p{
+    line-height: 0.8;
+}
+
+.username{
+    font: 15px "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    color: #50500f;
+}
+
+.message{
+    font: 15px "Trebuchet MS", sans-serif;
+    color: #878787;
+}
+ul {
+    list-style-type: none;
+}
+
+
+/*search icon positioning*/
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+.i-color {
+    color: #B6B6B6;
+}
